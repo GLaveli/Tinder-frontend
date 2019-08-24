@@ -1,17 +1,27 @@
 import React, { useState } from 'react';
 import './Login.css'
 
+import api from '../services/api'
 import logo from '../assets/rinder.png';
+
 
 export default function Login({ history }) {
   const [username, setUsername] = useState('');
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
 
     console.log(username);
 
-    history.push(username);
+    const response = await api.post('/users', {
+      username,
+    }
+    );
+
+    const { _id } = response.data;
+
+
+    history.push(`/user/${_id}`);
 
   }
 
