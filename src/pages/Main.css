@@ -23,6 +23,11 @@
   border-radius: 5px 5px 0 0;
 }
 
+.main-container ul li .imgBtn {
+  max-width: 25px;
+  border-radius: 5px 5px 0 0;
+}
+
 .main-container ul li footer {
   flex: 1;
   background: #fff;
@@ -58,4 +63,23 @@
   border-radius: 4px;
   background: #fff;
   cursor: pointer;
+}
+
+.main-container ul li .buttons button:hover img {
+  transform: translateY(-5px);
+  transition: all 0.2s;
+}
+
+.main-container .empty {
+  color: #999;
+  font-weight: bold;
+  margin-top: 150px;
+}
+
+#avisoUe {
+  font-size: 32px;
+}
+
+#avisoFimDaLinhaMenor {
+  font-size: 18px;
 }

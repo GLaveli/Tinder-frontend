@@ -30,7 +30,7 @@ export default function Login({ history }) {
       <form onSubmit={handleSubmit}>
         <img src={logo} alt="rinder" />
         <input
-          placeholder="Digite seu usuario"
+          placeholder="Usuario do GitHub"
           value={username}
           onChange={e => setUsername(e.target.value)}
         />
